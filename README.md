@@ -17,25 +17,25 @@ Dados do dono:
 
 - Data de nascimento
 
--Email
+- Email
 
--CPF
+- CPF
 
--ID (uuid)
+- ID (uuid)
 
 Dados da conta:
 
--Agência
+- Agência
 
--Dígito verificador da agência
+- Dígito verificador da agência
 
--Número da conta
+- Número da conta
 
--Dígito verificador do número da conta
+- Dígito verificador do número da conta
 
--Saldo
+- Saldo
 
--ID (uuid)
+- ID (uuid)
 
 Todos os dados devem possuir validação, mesmo que mínima
 
