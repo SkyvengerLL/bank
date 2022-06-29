@@ -1,8 +1,6 @@
-interface Response {
-   message: string;
-   data: any;
-   
-   id: string;
-};
+interface APIResponse {
+   data: any
+   messages: string[]
+}
 
-export {Response};
+export { APIResponse };

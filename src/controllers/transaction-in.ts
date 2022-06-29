@@ -3,11 +3,11 @@ import { CreateTransaction } from "../services";
 import { ResponseWriter } from "../utils";
 import {Transaction} from "../models/transactions";
 
-class Withdraw{
+class TransactionIn{
     public async handle (req: Request, res: Response)
     {
         try{
-            const response = await new CreateTransaction().execute(req.body as Transaction, 3);
+            const response = await new CreateTransaction().execute(req.body as Transaction, 0);
             ResponseWriter.success(res, 201, response);
         }
         catch (error)
@@ -17,4 +17,4 @@ class Withdraw{
     }
 }
 
-export {Withdraw};
+export {TransactionIn};
